@@ -1,0 +1,3 @@
+/Users/x/Desktop/cs356c++/CMakeFiles/rebuild_cache.dir
+/Users/x/Desktop/cs356c++/CMakeFiles/edit_cache.dir
+/Users/x/Desktop/cs356c++/CMakeFiles/hw1.dir
