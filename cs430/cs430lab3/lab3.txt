@@ -1,0 +1,337 @@
+MariaDB [(none)]> use yiboxu
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [yiboxu]> source createTable.sql
+Query OK, 0 rows affected (1.327 sec)
+
+Query OK, 0 rows affected (0.000 sec)
+
+Query OK, 0 rows affected (0.138 sec)
+
+Query OK, 0 rows affected (0.173 sec)
+
+Query OK, 0 rows affected (0.182 sec)
+
+Query OK, 0 rows affected (0.144 sec)
+
+Query OK, 0 rows affected (0.137 sec)
+
+Query OK, 0 rows affected (0.152 sec)
+
+Query OK, 0 rows affected (0.151 sec)
+
+Query OK, 0 rows affected (0.151 sec)
+
+Query OK, 0 rows affected (0.138 sec)
+
+Query OK, 0 rows affected (0.138 sec)
+
+Query OK, 0 rows affected (0.157 sec)
+
+Query OK, 0 rows affected (0.139 sec)
+
+MariaDB [yiboxu]> show tables;
++------------------+
+| Tables_in_yiboxu |
++------------------+
+| Audit            |
+| Author           |
+| AuthorPhone      |
+| Book             |
+| BorrowedBy       |
+| Library          |
+| LocatedAt        |
+| Member           |
+| Phone            |
+| Publisher        |
+| PublisherPhone   |
+| WrittenBy        |
++------------------+
+12 rows in set (0.001 sec)
+
+MariaDB [yiboxu]> source infoInsert.sql
+Query OK, 16 rows affected (0.028 sec)
+Records: 16  Duplicates: 0  Warnings: 0
+
+Query OK, 8 rows affected (0.075 sec)
+Records: 8  Duplicates: 0  Warnings: 0
+
+Query OK, 18 rows affected (0.081 sec)
+Records: 18  Duplicates: 0  Warnings: 0
+
+Query OK, 9 rows affected (0.081 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+Query OK, 9 rows affected (0.030 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+Query OK, 22 rows affected (0.081 sec)
+Records: 22  Duplicates: 0  Warnings: 0
+
+Query OK, 32 rows affected (0.030 sec)
+Records: 32  Duplicates: 0  Warnings: 0
+
+Query OK, 31 rows affected (0.084 sec)
+Records: 31  Duplicates: 0  Warnings: 0
+
+Query OK, 55 rows affected (0.084 sec)
+Records: 55  Duplicates: 0  Warnings: 0
+
+Query OK, 122 rows affected (0.033 sec)
+Records: 122  Duplicates: 0  Warnings: 0
+
+Query OK, 2 rows affected (0.030 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+Query OK, 28 rows affected (0.386 sec)
+Records: 28  Duplicates: 0  Warnings: 0
+
+Query OK, 27 rows affected (0.027 sec)
+Records: 27  Duplicates: 0  Warnings: 0
+
+MariaDB [yiboxu]> source queries.sql
++------------+--------------------+--------------+-------+
+| Name       | Street             | City         | State |
++------------+--------------------+--------------+-------+
+| Main       | 42 South Main      | Fort Collins | CO    |
+| South Park | 4000 South College | Fort Collins | CO    |
++------------+--------------------+--------------+-------+
+2 rows in set (0.000 sec)
+
++----------------+-------------+-------+-------+-------------+
+| ISBN           | LibraryName | Shelf | Floor | TotalCopies |
++----------------+-------------+-------+-------+-------------+
+| 96-42103-10001 | Main        |     1 |     1 |           3 |
+| 96-42103-10001 | South Park  |     8 |     3 |           1 |
+| 96-42103-10002 | Main        |     1 |     1 |           1 |
+| 96-42103-10002 | South Park  |     8 |     3 |           1 |
+| 96-42103-10003 | Main        |     1 |     1 |           1 |
+| 96-42103-10003 | South Park  |     8 |     3 |           1 |
+| 96-42103-10004 | Main        |     2 |     1 |           2 |
+| 96-42103-10004 | South Park  |     8 |     3 |           1 |
+| 96-42103-10005 | Main        |     2 |     1 |           1 |
+| 96-42103-10005 | South Park  |     8 |     3 |           1 |
+| 96-42103-10006 | Main        |     2 |     1 |           1 |
+| 96-42103-10006 | South Park  |     8 |     3 |           1 |
+| 96-42103-10007 | Main        |     3 |     1 |           2 |
+| 96-42103-10007 | South Park  |     7 |     3 |           3 |
+| 96-42103-10008 | Main        |     3 |     1 |           2 |
+| 96-42103-10008 | South Park  |     7 |     3 |           3 |
+| 96-42103-10009 | Main        |     3 |     1 |           2 |
+| 96-42103-10009 | South Park  |     7 |     3 |           1 |
+| 96-42103-10011 | Main        |     4 |     1 |           2 |
+| 96-42103-10011 | South Park  |     7 |     3 |           1 |
+| 96-42103-10022 | Main        |     4 |     1 |           3 |
+| 96-42103-10022 | South Park  |     7 |     3 |           2 |
+| 96-42103-10033 | Main        |     4 |     1 |           3 |
+| 96-42103-10033 | South Park  |     7 |     3 |           3 |
+| 96-42103-10034 | Main        |     5 |     2 |           1 |
+| 96-42103-10040 | Main        |     5 |     2 |           2 |
+| 96-42103-10040 | South Park  |     4 |     2 |           1 |
+| 96-42103-10054 | Main        |     5 |     2 |           2 |
+| 96-42103-10054 | South Park  |     4 |     2 |           1 |
+| 96-42103-10068 | Main        |     6 |     2 |           1 |
+| 96-42103-10068 | South Park  |     4 |     2 |           1 |
+| 96-42103-10081 | Main        |     6 |     2 |           1 |
+| 96-42103-10081 | South Park  |     4 |     2 |           1 |
+| 96-42103-10093 | Main        |     6 |     2 |           1 |
+| 96-42103-10093 | South Park  |     4 |     2 |           1 |
+| 96-42103-10109 | Main        |     6 |     2 |           1 |
+| 96-42103-10109 | South Park  |     4 |     2 |           1 |
+| 96-42103-10206 | Main        |     7 |     2 |           1 |
+| 96-42103-10206 | South Park  |     4 |     2 |           1 |
+| 96-42103-10300 | Main        |     7 |     2 |           2 |
+| 96-42103-10300 | South Park  |     4 |     2 |           1 |
+| 96-42103-10401 | Main        |     7 |     2 |           2 |
+| 96-42103-10401 | South Park  |     3 |     2 |           1 |
+| 96-42103-10502 | Main        |     7 |     2 |           1 |
+| 96-42103-10502 | South Park  |     3 |     2 |           1 |
+| 96-42103-10604 | Main        |     8 |     2 |           2 |
+| 96-42103-10709 | Main        |     8 |     2 |           3 |
+| 96-42103-10800 | Main        |     8 |     2 |           2 |
+| 96-42103-10907 | Main        |     8 |     2 |           7 |
+| 96-42103-10907 | South Park  |     3 |     2 |           7 |
+| 96-42103-11003 | Main        |     8 |     2 |           3 |
+| 96-42103-11003 | South Park  |     3 |     2 |           2 |
+| 96-42103-11604 | South Park  |     3 |     2 |           2 |
+| 96-42103-11709 | South Park  |     3 |     2 |           1 |
+| 96-42103-11800 | South Park  |     3 |     2 |           2 |
++----------------+-------------+-------+-------+-------------+
+55 rows in set (0.001 sec)
+
++------------------------------+-------------+-------------+
+| Title                        | TotalCopies | LibraryName |
++------------------------------+-------------+-------------+
+| American Football            |           3 | South Park  |
+| American Football            |           3 | Main        |
+| Challenging Puzzles          |           2 | South Park  |
+| Challenging Puzzles          |           3 | Main        |
+| Cubs Win!                    |           7 | South Park  |
+| Cubs Win!                    |           7 | Main        |
+| Database Theory              |           1 | South Park  |
+| Database Theory              |           2 | Main        |
+| Downton Abbey                |           2 | Main        |
+| Downton Abbey                |           1 | South Park  |
+| Eating Healthy               |           1 | South Park  |
+| Eating Healthy               |           2 | Main        |
+| Escape from Gilligans Island |           1 | South Park  |
+| Escape from Gilligans Island |           1 | Main        |
+| Fixing Computers             |           1 | Main        |
+| Fixing Computers             |           1 | South Park  |
+| Gardening Tips               |           1 | Main        |
+| Gardening Tips               |           1 | South Park  |
+| Hal Finds a Home             |           1 | South Park  |
+| Hal Finds a Home             |           1 | Main        |
+| How to Digitally Sign        |           3 | South Park  |
+| How to Digitally Sign        |           2 | Main        |
+| How to Grow Cucumbers        |           1 | South Park  |
+| How to Grow Cucumbers        |           2 | Main        |
+| How to Grow Tomatoes         |           3 | Main        |
+| How to Grow Tomatoes         |           1 | South Park  |
+| Lacey Discovers Herself      |           2 | Main        |
+| Lacey Discovers Herself      |           1 | South Park  |
+| Last Train to Clarksville    |           1 | Main        |
+| Last Train to Clarksville    |           1 | South Park  |
+| Missing Tomorrow             |           2 | South Park  |
+| Missing Tomorrow             |           3 | Main        |
+| Mr. Ed                       |           1 | South Park  |
+| Mr. Ed                       |           1 | Main        |
+| Mr. Smith Goes to Washington |           1 | South Park  |
+| Mr. Smith Goes to Washington |           1 | Main        |
+| Red Burn                     |           1 | South Park  |
+| Red Burn                     |           1 | Main        |
+| Sam Needs a Friend           |           3 | South Park  |
+| Sam Needs a Friend           |           2 | Main        |
+| Studying is Your Friend      |           1 | South Park  |
+| Studying is Your Friend      |           1 | Main        |
+| Taks McGrill                 |           1 | South Park  |
+| Taks McGrill                 |           1 | Main        |
+| To Have and To Cherish       |           1 | South Park  |
+| To Have and To Cherish       |           2 | Main        |
+| Where to Start               |           1 | South Park  |
+| Where to Start               |           2 | Main        |
++------------------------------+-------------+-------------+
+48 rows in set (0.001 sec)
+
++-------------+----------------+
+| LibraryName | NumberOfTitles |
++-------------+----------------+
+| Main        |             28 |
+| South Park  |             27 |
++-------------+----------------+
+2 rows in set (0.001 sec)
+
+MariaDB [yiboxu]> source createTriggers.sql
+Query OK, 0 rows affected (0.050 sec)
+
+Query OK, 0 rows affected (0.048 sec)
+
+Query OK, 0 rows affected (0.048 sec)
+
+Query OK, 0 rows affected (0.049 sec)
+
+MariaDB [yiboxu]> source creatViews.sql
+ERROR: Failed to open file 'creatViews.sql', error: 2
+MariaDB [yiboxu]> source createViews.sql
+Query OK, 0 rows affected (0.020 sec)
+
++------------------------------+--------------------------------------------------+-------+-------------+
+| Title                        | Authors                                          | Shelf | LibraryName |
++------------------------------+--------------------------------------------------+-------+-------------+
+| American Football            | Barnes Julie                                     |     4 | Main        |
+| American Football            | Barnes Julie                                     |     7 | South Park  |
+| Blue is Your Friend          | Wright Barbara,Crichton John                     |     3 | South Park  |
+| Challenging Puzzles          | Ramjet Roger                                     |     4 | Main        |
+| Challenging Puzzles          | Ramjet Roger                                     |     7 | South Park  |
+| Cubs Win!                    | Wright Barbara,Skelton Red                       |     8 | Main        |
+| Cubs Win!                    | Skelton Red,Wright Barbara                       |     3 | South Park  |
+| Database Theory              | Kid Waco,Betts Dickey                            |     4 | Main        |
+| Database Theory              | Betts Dickey,Kid Waco                            |     7 | South Park  |
+| Downton Abbey                | Crawley Robert                                   |     3 | Main        |
+| Downton Abbey                | Crawley Robert                                   |     7 | South Park  |
+| Eating Healthy               | Kid Waco,Betts Dickey                            |     7 | Main        |
+| Eating Healthy               | Betts Dickey,Kid Waco                            |     4 | South Park  |
+| Eating in the Fort           | Magnum Thomas                                    |     3 | South Park  |
+| Escape from Gilligans Island | Ewing Bobby,Hart Mickey                          |     6 | Main        |
+| Escape from Gilligans Island | Ewing Bobby,Hart Mickey                          |     4 | South Park  |
+| European Football            | Barnes Julie                                     |     5 | Main        |
+| Fixing Computers             | Skelton Red                                      |     6 | Main        |
+| Fixing Computers             | Skelton Red                                      |     4 | South Park  |
+| Gardening Tips               | Barnes Julie,Magnum Thomas                       |     7 | Main        |
+| Gardening Tips               | Barnes Julie,Magnum Thomas                       |     3 | South Park  |
+| Green Eggs                   | Magnum Thomas,Flux Aeon                          |     3 | South Park  |
+| Green is Your Friend         | Crichton John,Wright Barbara                     |     8 | Main        |
+| Hal Finds a Home             | Hart Mickey                                      |     2 | Main        |
+| Hal Finds a Home             | Hart Mickey                                      |     8 | South Park  |
+| How to Digitally Sign        | Skelton Red,Crichton John                        |     3 | Main        |
+| How to Digitally Sign        | Skelton Red,Crichton John                        |     7 | South Park  |
+| How to Grow Cucumbers        | Ramjet Roger,Ewing Bobby                         |     7 | Main        |
+| How to Grow Cucumbers        | Ramjet Roger,Ewing Bobby                         |     3 | South Park  |
+| How to Grow Tomatoes         | Ewing Bobby,Kid Waco                             |     1 | Main        |
+| How to Grow Tomatoes         | Ewing Bobby,Kid Waco                             |     8 | South Park  |
+| Lacey Discovers Herself      | Barnes Julie,Magnum Thomas                       |     5 | Main        |
+| Lacey Discovers Herself      | Barnes Julie,Magnum Thomas                       |     4 | South Park  |
+| Last Train to Clarksville    | Ewing Bobby                                      |     2 | Main        |
+| Last Train to Clarksville    | Ewing Bobby                                      |     8 | South Park  |
+| Missing Tomorrow             | Betts Dickey,Slick Grace,Hart Mickey,Mason Perry |     8 | Main        |
+| Missing Tomorrow             | Slick Grace,Hart Mickey,Mason Perry,Betts Dickey |     3 | South Park  |
+| Mr. Ed                       | Ferguson Scottie                                 |     6 | Main        |
+| Mr. Ed                       | Ferguson Scottie                                 |     4 | South Park  |
+| Mr. Smith Goes to Washington | Skelton Red                                      |     1 | Main        |
+| Mr. Smith Goes to Washington | Skelton Red                                      |     8 | South Park  |
+| Red Burn                     | Crawley Robert,Kid Waco                          |     6 | Main        |
+| Red Burn                     | Kid Waco,Crawley Robert                          |     4 | South Park  |
+| Sam Needs a Friend           | Ferguson Scottie,Wright Barbara,Thornhill Roger  |     3 | Main        |
+| Sam Needs a Friend           | Ferguson Scottie,Wright Barbara,Thornhill Roger  |     7 | South Park  |
+| Studying is Your Friend      | Ramjet Roger,Magnum Thomas                       |     1 | Main        |
+| Studying is Your Friend      | Magnum Thomas,Ramjet Roger                       |     8 | South Park  |
+| Taks McGrill                 | Wright Barbara,Ferguson Scottie                  |     7 | Main        |
+| Taks McGrill                 | Wright Barbara,Ferguson Scottie                  |     4 | South Park  |
+| To Have and To Cherish       | Crawley Robert,Crichton John,Thornhill Roger     |     2 | Main        |
+| To Have and To Cherish       | Crichton John,Thornhill Roger,Crawley Robert     |     8 | South Park  |
+| Too Many Cooks               | Flux Aeon,Magnum Thomas                          |     8 | Main        |
+| Using the Library            | Magnum Thomas                                    |     8 | Main        |
+| Where to Start               | Slick Grace,Ramjet Roger                         |     5 | Main        |
+| Where to Start               | Ramjet Roger,Slick Grace                         |     4 | South Park  |
++------------------------------+--------------------------------------------------+-------+-------------+
+55 rows in set (0.002 sec)
+
+MariaDB [yiboxu]> source activity.sql
+Query OK, 1 row affected (0.021 sec)
+
+Query OK, 1 row affected (0.024 sec)
+
+Query OK, 1 row affected (0.024 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+ERROR 1451 (23000): Cannot delete or update a parent row: a foreign key constraint fails (`yiboxu`.`WrittenBy`, CONSTRAINT `WrittenBy_ibfk_2` FOREIGN KEY (`AuthorID`) REFERENCES `Author` (`AuthorID`))
+Query OK, 1 row affected (0.024 sec)
+
+Query OK, 1 row affected (0.024 sec)
+
+Query OK, 1 row affected (0.024 sec)
+
+Query OK, 1 row affected (0.030 sec)
+
+Query OK, 1 row affected (0.024 sec)
+
+Query OK, 1 row affected (0.024 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`yiboxu`.`Book`, CONSTRAINT `Book_ibfk_1` FOREIGN KEY (`PubID`) REFERENCES `Publisher` (`PubID`))
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`yiboxu`.`LocatedAt`, CONSTRAINT `LocatedAt_ibfk_2` FOREIGN KEY (`ISBN`) REFERENCES `Book` (`ISBN`) ON DELETE CASCADE)
++----+-----------+--------+---------------------+
+| id | TableName | Action | DateTime            |
++----+-----------+--------+---------------------+
+|  1 | LocatedAt | INSERT | 2020-07-07 23:43:57 |
+|  2 | LocatedAt | UPDATE | 2020-07-07 23:43:57 |
+|  3 | Author    | INSERT | 2020-07-07 23:43:57 |
+|  4 | LocatedAt | INSERT | 2020-07-07 23:43:57 |
+|  5 | LocatedAt | DELETE | 2020-07-07 23:43:57 |
+|  6 | LocatedAt | UPDATE | 2020-07-07 23:43:57 |
++----+-----------+--------+---------------------+
+6 rows in set (0.000 sec)
+
+MariaDB [yiboxu]> notee

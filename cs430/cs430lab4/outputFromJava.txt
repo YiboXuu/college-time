@@ -1,0 +1,48 @@
+Checking in book.
+The book with the ISBN 96-42103-10800 is now checked in.
+
+Checking out book.
+The book with the ISBN 96-42103-10011 is now checked out
+
+Checking out book.
+The book with the ISBN 96-42103-10006 is now checked out
+
+Checking in book.
+The book with the ISBN 96-42103-10002 is now checked in.
+
+Checking out book.
+ERROR, No this book checked out information, this book ISBN is96-42103-10604.
+
+Checking out book.
+The book with the ISBN 96-42103-10709 is now checked out
+
+Checking out book.
+ERROR, No this book checked out information, this book ISBN is97-34506-10709.
+
+Checking out book.
+The book with the ISBN 96-42103-10022 is now checked out
+
+Checking in book.
+The book with the ISBN 96-42103-10401 is now checked in.
+
+Checking out book.
+ERROR, No this book checked out information, this book ISBN is96-42103-10709.
+
+Checking in book.
+The book with the ISBN 96-42103-11003 is now checked in.
+
+Checking in book.
+ERROR: Nobody borrowed this book, the ISBN is 96-42103-10109.
+
+Checking out book.
+The book with the ISBN 96-42103-10093 is now checked out
+
+Checking out book.
+ERROR, No this book checked out information, this book ISBN is97-12413-10093.
+
+Checking out book.
+The book with the ISBN 96-42103-10093 is now checked out
+
+Checking out book.
+ERROR, No this book checked out information, this book ISBN is96-42103-11709.
+
