@@ -1,0 +1,32 @@
+
+xdeMacBook-Pro:~ x$ ssh -x yiboxu@boston.cs.colostate.edu
+
+-------------------------------------------------------------------------
+For system policies, information, and answers to frequently asked
+questions see:
+
+      http://www.cs.colostate.edu/~info/faq.html
+
+For a list of installed software packages and their locations see
+
+      http://www.cs.colostate.edu/~info/software
+
+To report systems problems or to request the recovery of accidentally
+deleted files, see:
+
+      http://www.cs.colostate.edu/cgi-bin/trouble.pl
+
+To change your Linux password, log into any CS network linux machine and
+run /usr/bin/passwd.  (Note: this does not affect your Windows password.)
+-------------------------------------------------------------------------
+
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Last login: Fri Dec 13 11:09:30 2019 from 10.83.177.132
+boston:~$ ls -al ~/.ssh
+total 16
+drwx------  2 yiboxu under 4096 Feb 17 23:18 .
+drwx--x--x 44 yiboxu under 4096 Feb 17 23:26 ..
+-rw-r-----  1 yiboxu under  404 Feb 17 23:18 authorized_keys
+-rw-r--r--  1 yiboxu under  175 Dec 12 14:47 known_hosts
+boston:~$ 

@@ -1,0 +1,91 @@
+
+boise:~$ ls -al ~/.ssh
+total 16
+drwx------  2 yiboxu under 4096 Feb 17 23:18 .
+drwx--x--x 44 yiboxu under 4096 Feb 17 23:22 ..
+-rw-r-----  1 yiboxu under  404 Feb 17 23:18 authorized_keys
+-rw-r--r--  1 yiboxu under  175 Dec 12 14:47 known_hosts
+boise:~$ 
+
+
+The files I found.
+
+
+
+
+Below is some informations when I tried to login without password.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/x/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/x/.ssh/id_rsa.
+Your public key has been saved in /Users/x/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:iE9mjz8QskQIZmKDgb2kmk+8F/KTQ/y9sgxYdLsArvI x@xdeMacBook-Pro.local
+The key's randomart image is:
++---[RSA 2048]----+
+|*O .             |
+|B = .            |
+| o.o. .          |
+|...ooo.o         |
+|.o.o+o*.S        |
+|o.+o=*.+         |
+|oo.=.++o.        |
+|..o *oo.o        |
+|  E. ooooo       |
++----[SHA256]-----+
+
+
+
+cat .ssh/id_rsa.pub | ssh -x yiboxu@boise.cs.colostate.edu 'cat >> .ssh/authorized_keys'
+yiboxu@boise.cs.colostate.edu's password: 
+
+
+
+
+xdeMacBook-Pro:~ x$ ssh -x yiboxu@boise.cs.colostate.edu
+
+-------------------------------------------------------------------------
+For system policies, information, and answers to frequently asked
+questions see:
+
+      http://www.cs.colostate.edu/~info/faq.html
+
+For a list of installed software packages and their locations see
+
+      http://www.cs.colostate.edu/~info/software
+
+To report systems problems or to request the recovery of accidentally
+deleted files, see:
+
+      http://www.cs.colostate.edu/cgi-bin/trouble.pl
+
+To change your Linux password, log into any CS network linux machine and
+run /usr/bin/passwd.  (Note: this does not affect your Windows password.)
+-------------------------------------------------------------------------
+
+Activate the web console with: systemctl enable --now cockpit.socket
+
+Last login: Mon Feb 17 23:21:00 2020 from 129.19.47.254
+boise:~$ 
+
+
+

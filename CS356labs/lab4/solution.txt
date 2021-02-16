@@ -1,0 +1,45 @@
+for assignment part 1:
+SELECT * FROM account WHERE username = ' OR 1=1; --
+
+
+this can help us to get into the table account without the name, and we still can get “Successful login” from sqli() function.
+
+
+
+for assignment part2:
+SELECT * FROM account WHERE username = '; DELETE FROM account; --
+
+
+this can help us to delete the all record from the table account.
+
+
+
+
+
+python code:
+
+
+def sqli():
+    u_name = str(input("Enter Username\t"))
+    print("Enter Password:\t")
+    p_word = getpass()
+    #sanitize u_name and p_word here. You are free to do it your way.
+    obj = " "
+    if u_name.find(";") >0 or u_name.find(obj) > 0  :
+        print("Failed login1")
+    else:
+        try:
+            c.execute("SELECT username, password FROM account WHERE username='%s' AND password='%s'" %(u_name, p_word))
+        except:
+            c.executescript("SELECT username, password FROM account WHERE username='%s' AND password='%s'" %(u_name, p_word))
+        if c.fetchone():
+            print("Successful login")
+        else:
+            print("Failed login")
+sqli()
+
+
+Enter Username	SELECT * FROM account WHERE username = ' OR 1=1; --
+Enter Password:	
+········
+Failed login1
