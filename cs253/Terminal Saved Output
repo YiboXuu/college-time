@@ -1,0 +1,158 @@
+Last login: Tue Sep 10 19:28:07 on ttys000
+xdeMacBook-Pro:~ x$ cd DeSKTOP
+xdeMacBook-Pro:DeSKTOP x$ CD cs370
+xdeMacBook-Pro:DeSKTOP x$ cd cs370
+xdeMacBook-Pro:cs370 x$ cd hw1
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Invoker.c:3:10: fatal error: 'Processor.h' file not found
+#include "Processor.h"
+         ^
+1 error generated.
+make: *** [build] Error 1
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Invoker.c:19:30: warning: implicit declaration of function 'get_running_ratio'
+      is invalid in C99 [-Wimplicit-function-declaration]
+                double avg_running_ratio = get_running_ratio();
+                                           ^
+1 warning generated.
+xdeMacBook-Pro:hw1 x$ build
+-bash: build: command not found
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Invoker.c:19:30: warning: implicit declaration of function 'get_running_ratio'
+      is invalid in C99 [-Wimplicit-function-declaration]
+                double avg_running_ratio = get_running_ratio();
+                                           ^
+1 warning generated.
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Invoker.c:3:10: fatal error: 'Executor.h' file not found
+#include "Executor.h"
+         ^
+1 error generated.
+make: *** [build] Error 1
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Invoker.c:3:10: fatal error: 'Executor.h' file not found
+#include "Executor.h"
+         ^
+1 error generated.
+make: *** [build] Error 1
+xdeMacBook-Pro:hw1 x$ clear
+
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Invoker.c:3:10: fatal error: 'Executor.h' file not found
+#include "Executor.h"
+         ^
+1 error generated.
+make: *** [build] Error 1
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+xdeMacBook-Pro:hw1 x$ build
+-bash: build: command not found
+xdeMacBook-Pro:hw1 x$ package
+-bash: package: command not found
+xdeMacBook-Pro:hw1 x$ make clean
+rm -f Invoker
+xdeMacBook-Pro:hw1 x$ ./Invoker 3
+-bash: ./Invoker: No such file or directory
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+xdeMacBook-Pro:hw1 x$ ./Invoker 3
+[Invoker]: With seed: 3
+[Executor]: Number of iterations is 101
+[Executor]: Largest array size is 792
+[Invoker]: Running ratio: 0.995574
+
+xdeMacBook-Pro:hw1 x$ ./Invoker 64
+[Invoker]: With seed: 64
+[Executor]: Number of iterations is 108
+[Executor]: Largest array size is 788
+[Invoker]: Running ratio: 1.016496
+
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+xdeMacBook-Pro:hw1 x$ ./Invoker 3
+[Invoker]: With seed: 3
+[Executor]: Number of iterations is 101
+[Executor]: Iteration with maximum vowel count is  792
+[Invoker]: Running ratio: 0.995574
+
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Undefined symbols for architecture x86_64:
+  "_get_running_ratio", referenced from:
+      _main in Invoker-ead0ae.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [build] Error 1
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+xdeMacBook-Pro:hw1 x$ ./Invoker 3
+[Invoker]: With seed: 3
+[Executor]: Number of iterations is 101
+[Executor]: Iteration with maximum vowel count is  792
+[Invoker]: Running ratio: 0.995574
+
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Executor.c:65:27: warning: implicit declaration of function 'num_ratio' is
+      invalid in C99 [-Wimplicit-function-declaration]
+        float numRatio =  num_ratio(p_array,arraySize); 
+                          ^
+1 warning generated.
+Undefined symbols for architecture x86_64:
+  "_num_ratio", referenced from:
+      _get_running_ratio in Executor-69248d.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [build] Error 1
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Executor.c:65:38: warning: incompatible pointer types passing 'int *' to
+      parameter of type 'char *' [-Wincompatible-pointer-types]
+        float numRatio =  char_ratio(p_array,arraySize,biggestArraySize); 
+                                     ^~~~~~~
+Executor.c:35:24: note: passing argument to parameter 'arr' here
+float char_ratio(char *arr, int size, int *maxCountPointer)
+                       ^
+Executor.c:65:56: warning: incompatible integer to pointer conversion passing
+      'int' to parameter of type 'int *'; take the address with &
+      [-Wint-conversion]
+        float numRatio =  char_ratio(p_array,arraySize,biggestArraySize); 
+                                                       ^~~~~~~~~~~~~~~~
+                                                       &
+Executor.c:35:44: note: passing argument to parameter 'maxCountPointer' here
+float char_ratio(char *arr, int size, int *maxCountPointer)
+                                           ^
+2 warnings generated.
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Executor.c:65:38: warning: incompatible pointer types passing 'int *' to
+      parameter of type 'char *' [-Wincompatible-pointer-types]
+        float numRatio =  char_ratio(p_array,arraySize,&biggestArraySize); 
+                                     ^~~~~~~
+Executor.c:35:24: note: passing argument to parameter 'arr' here
+float char_ratio(char *arr, int size, int *maxCountPointer)
+                       ^
+1 warning generated.
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+Executor.c:58:15: warning: incompatible pointer types initializing 'char *' with
+      an expression of type 'int *' [-Wincompatible-pointer-types]
+        char *p_array =(int *)malloc(sizeof(int) * arraySize); 
+              ^        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+xdeMacBook-Pro:hw1 x$ make
+gcc -o Invoker Invoker.c Executor.c
+xdeMacBook-Pro:hw1 x$ 
+xdeMacBook-Pro:hw1 x$ ./Invoker 3
+[Invoker]: With seed: 3
+[Executor]: Number of iterations is 71
+[Executor]: Iteration with maximum vowel count is  784
+[Invoker]: Running ratio: 1.035461
+
+xdeMacBook-Pro:hw1 x$ 

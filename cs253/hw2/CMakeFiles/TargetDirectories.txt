@@ -1,0 +1,4 @@
+/Users/x/Desktop/cs253/hw2/CMakeFiles/rebuild_cache.dir
+/Users/x/Desktop/cs253/hw2/CMakeFiles/edit_cache.dir
+/Users/x/Desktop/cs253/hw2/CMakeFiles/hw2.tar.dir
+/Users/x/Desktop/cs253/hw2/CMakeFiles/hw2.dir
