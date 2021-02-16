@@ -1,0 +1,34 @@
+{
+    "places": [
+        {
+            "name": "Chicago",
+            "latitude": "39.5383625",
+            "longitude": "-104.9763765",
+            "notes": "A"
+        },
+        {
+            "name": "New York",
+            "latitude": "40.0293099",
+            "longitude": "-105.2399775",
+            "notes": "B"
+        },
+        {
+            "name": "Los Angeles",
+            "latitude": "40.576761",
+            "longitude": "-105.099610",
+            "notes": "C"
+        }
+    ],
+    "options": {
+        "title": "Round Trip",
+        "earthRadius": "3959.0"
+    },
+    "distances": [
+        713,
+        1742,
+        2451
+        
+    ],
+    "requestType": "trip",
+    "requestVersion": 3
+}
